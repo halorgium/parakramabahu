@@ -6,13 +6,13 @@ class CreateShips < ActiveRecord::Migration[6.1]
       t.datetime :launched
       t.datetime :decomissioned
       t.text :fate
-      t.references :kingdoms
+      t.references :kingdom
     end
 
     create_table :utterances do |t|
       t.text :uttered_text
       t.datetime :uttered_at
-      t.references :monarchs
+      t.references :monarch
     end
 
     create_table :kingdoms do |t|
@@ -20,7 +20,7 @@ class CreateShips < ActiveRecord::Migration[6.1]
       t.references :monarch
     end
 
-    create_table :monarchs do |t|
+    create_table :monarches do |t|
       t.string :name
       t.datetime :accession
       t.datetime :succession

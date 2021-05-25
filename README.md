@@ -1,24 +1,14 @@
-# README
+Kingdom
+- has many Ships
+- belongs to Monarch
+- many to many Wars
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## START IT UP
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle
+rake db:create
+rake db:seed
+rails s
+rails c
+```

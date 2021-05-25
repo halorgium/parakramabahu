@@ -1,0 +1,9 @@
+<script>
+  document.onReady = function () {
+    setTimeout(window.reload, 1000);
+  }
+</script>
+
+<% Kingdom.all.each do |k| %>
+  <div><%= k.name %></div>
+<% end %>
